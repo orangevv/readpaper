@@ -7,8 +7,9 @@
 #  1.Introduction
 Bhagavatula等人(2019)提出了一种基于自然语言的溯因推理任务αNLI。如图1 (a)所示，给定两个观测事件O1和O2， αNLI任务要求预测模型从两个候选假设事件H1和H2中选择一个更合理的解释。更直白点说从H1和H2中选择一个假设解释从O1到O2的变化。
 <img src="https://img-blog.csdnimg.cn/2c4871095c15477db137e8ba2b505f3a.png?x-oss-process=image#pic_center" width="50%"></img>
+
 然而，尽管预先训练的语言模型可以获得丰富的语言知识，以帮助理解事件的语义，但额外的常识知识仍然是溯及推理所必需的。例如，如图1(b)所示。可以发现通过引入中间变量I1和I2，使得事件链的发展更具有逻辑了。具体地，如图1 (c)所示，在RoBERTa框架的基础上，我们额外引入了一个潜在变量z来对关于中间事件的信息建模。
-<img src="https://img-blog.csdnimg.cn/2c82307273ac43dd8ec4c603d32362e0.png?x-oss-process=image #pic_center =500x230" alt="在这里插入图片描述" style="zoom:50%;" />
+<img src="https://img-blog.csdnimg.cn/2c82307273ac43dd8ec4c603d32362e0.png?x-oss-process=image#pic_center" width="50%"></img>
 
 # 2.Background
 ## Problem Formalization
